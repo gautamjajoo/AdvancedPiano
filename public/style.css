@@ -1,0 +1,57 @@
+body{
+  width: 75vw;
+  margin: auto;
+}
+
+#piano{
+  height: 300px;
+}
+
+.key{
+  height: 100px;
+  width: 13%;
+  float: left;
+  border: 5px solid black;
+  border-right: none;
+  background: white;
+  text-align: center;
+  padding-top: 300px;
+}
+
+#B{
+  border-right: 5px solid black;
+}
+
+.button, .view-song{
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.btn{
+  background-color: #338eda;
+  border: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.btn:first-child {
+  margin-left: 0;
+}
+
+.record-button.active {
+  opacity: 80%;
+  background-color: #33d6a6;
+}
+
+.play-button, .save-button, .view-song{
+  display: none;
+}
+
+.play-button.show, .save-button.show, .view-song.show{
+  display: block;
+}

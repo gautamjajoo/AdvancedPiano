@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PIANO</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.52/Tone.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <script>
+      const currentSong = <%- JSON.stringify(locals.song) || 'undefined' %>
+    </script>
+
+  <body>
+    <div>
+      <h1>PIANO</h1>
+      <% if (locals.song == null) { %>
+      <p>Click the <b>S</b> key to make a middle <b>C</b>, then <b>D</b> to make <b>D</b> and so on up until <b>B</b> with the <b>K</b> key.</p>
+      <p>To move up and down the piano, click <b>&#8249;</b> and <b>&#8250;</b>. Your current section is <b id="sectionNo">4</b>
+        <% } %>
+    </div>
+    <div class="button">
+      <% if (locals.song == null) { %>
+      <button class="record-button btn">RECORD</button>
+      <button class="save-button btn">SAVE</button>
+      <% } else { %>
+      <a href="/" class="btn">RECORD NEW SONG</a>
+      <% } %>
+      <button class="play-button btn <%= locals.song != null ? 'show' : '' %>">PLAY</button>
+      <a href="#" class="view-song btn">VIEW SONG</a>
+    </div>
+    
+    <div id="piano">
+      <span class="key" id="C"><strong>C</strong></span>
+      <span class="key" id="D"><strong>D</strong></span>
+      <span class="key" id="E"><strong>E</strong></span>
+      <span class="key" id="F"><strong>F</strong></span>
+      <span class="key" id="G"><strong>G</strong></span>
+      <span class="key" id="A"><strong>A</strong></span>
+      <span class="key" id="B"><strong>B</strong></span>
+    </div> 
+
+    <script src="/app.js"></script>
+  </body>
+</html>
