@@ -6,8 +6,8 @@ piano use the `left-arrow` and `right-arrow` key.
 
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/24366008/110521778-2e4dcd80-8136-11eb-98ee-1d19f127e465.png" width="500" />
-  <img src="https://user-images.githubusercontent.com/24366008/110521782-30179100-8136-11eb-8f78-79294d79ae1c.png" width="500" /> 
+  <img src="https://user-images.githubusercontent.com/24366008/110521778-2e4dcd80-8136-11eb-98ee-1d19f127e465.png" width="450" />
+  <img src="https://user-images.githubusercontent.com/24366008/110521782-30179100-8136-11eb-8f78-79294d79ae1c.png" width="450" /> 
 </p>
 
 
